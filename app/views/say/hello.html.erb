@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Hello, Rails!</title>
+</head>
+<body>
+<h1 style="color:red">Hello from Rails!</h1>
+<p> It's now <%= Time.now %></p>
+<p> (using attribute)It is now <%= @time %></p>
+<p>
+(using anchor tag)	Time to say 
+<a href="/say/goodbye">Goodbye</a>!
+</p>
+
+<p>
+(using link_to)Time to say
+<%= link_to "Goodbye", say_goodbye_path %>!
+</p>
+</body>
+</html>
